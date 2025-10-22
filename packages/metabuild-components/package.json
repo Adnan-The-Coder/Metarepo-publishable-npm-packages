@@ -21,5 +21,8 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "lucide-react": "^0.546.0"
   }
 }
