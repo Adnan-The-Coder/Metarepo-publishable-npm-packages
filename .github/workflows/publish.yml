@@ -43,7 +43,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build the metabuild-components library
-        run: pnpm nx build @cloud-rooted/components
+        run: pnpm nx build @cloud-root/components
 
       - name: Publish to npm
         run: |
