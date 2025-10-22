@@ -43,14 +43,11 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build the metabuild-components library
-        run: pnpm nx build metabuild-components
-
-      - name: Verify build output
-        run: ls -la dist/packages/metabuild-components
+        run: pnpm nx build @metabuild/components
 
       - name: Publish to npm
         run: |
-          cd dist/packages/metabuild-components
+          cd packages/dist/packages/metabuild-components
           npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
