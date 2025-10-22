@@ -49,6 +49,5 @@ jobs:
         run: |
           npm publish --access public
         working-directory: packages/metabuild-components
-        
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
