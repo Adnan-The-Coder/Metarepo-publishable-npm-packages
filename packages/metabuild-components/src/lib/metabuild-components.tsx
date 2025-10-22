@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { ChevronRight, Check, Star, Menu, X, ArrowRight, Play, Users, Zap, Shield, Globe } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { ChevronRight, Check, Star, Menu, X, ArrowRight, Users, Zap, Shield, Globe } from 'lucide-react';
 
 // Hero Component with gradient background and CTA
 export function Hero({ 
@@ -10,7 +10,7 @@ export function Hero({
   onPrimaryClick = () => {},
   onSecondaryClick = () => {},
   backgroundVariant = "gradient"
-  }) {
+}) {
   return (
     <section className={`relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden ${
       backgroundVariant === 'gradient' ? 'bg-gradient-to-br from-blue-50 via-white to-purple-50' : 'bg-white'
@@ -55,7 +55,7 @@ export function FeatureGrid({
     { icon: Globe, title: "Global Scale", description: "Deploy worldwide in seconds" },
     { icon: Users, title: "Team Collaboration", description: "Work together seamlessly" }
   ]
-  }) {
+}) {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
@@ -91,7 +91,7 @@ export function PricingSection({
     { name: "Pro", price: "$79", period: "/month", features: ["Unlimited Projects", "50GB Storage", "Priority Support", "Advanced Analytics", "Custom Domain"], popular: true },
     { name: "Enterprise", price: "Custom", period: "", features: ["Everything in Pro", "Dedicated Support", "Custom Integrations", "SLA Guarantee", "Advanced Security"], popular: false }
   ]
-  }) {
+}) {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white">
       <div className="max-w-7xl mx-auto">
@@ -159,7 +159,7 @@ export function Testimonials({
     { name: "Michael Chen", role: "Designer", content: "The best tool I've used. Clean, fast, and powerful.", avatar: "MC", rating: 5 },
     { name: "Emily Rodriguez", role: "Developer", content: "Incredible developer experience. Saves us hours every week.", avatar: "ER", rating: 5 }
   ]
-  }) {
+}) {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
@@ -202,7 +202,7 @@ export function CTASection({
   subtitle = "Join thousands of satisfied customers today",
   buttonText = "Start Free Trial",
   onButtonClick = () => {}
-  }) {
+}) {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-purple-600">
       <div className="max-w-4xl mx-auto text-center">
@@ -226,11 +226,13 @@ export function Navbar({
   links = ["Features", "Pricing", "About", "Contact"],
   ctaText = "Get Started",
   onCtaClick = () => {}
-  }) {
+}) {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
     const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -306,7 +308,7 @@ export function Footer({
     { title: "Company", links: ["About", "Blog", "Careers", "Press"] },
     { title: "Resources", links: ["Documentation", "Help Center", "Community", "Contact"] }
   ]
-  }) {
+}) {
   return (
     <footer className="bg-gray-900 text-gray-300 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
