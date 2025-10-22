@@ -47,7 +47,6 @@ jobs:
 
       - name: Publish to npm
         run: |
-          cd dist
           npm publish --access public
         working-directory: packages/metabuild-components
         
