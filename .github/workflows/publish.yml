@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - packages/metabuild-components
   workflow_dispatch: # allows manual trigger (manual publish)
 
 jobs:
