@@ -14,12 +14,6 @@
       "options": {
         "command": "pnpm --filter web-v1 build"
       }
-    },
-    "lint": {
-      "executor": "nx:run-commands",
-      "options": {
-        "command": "pnpm --filter web-v1 lint"
-      }
     }
   }
 }
