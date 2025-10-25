@@ -3,12 +3,12 @@ name: Automated Web App Deployment to Cloudflare Workers
 on:
   push:
     branches:
-      - configure/workspace
+      - main
     paths:
       - 'apps/web/**'
   pull_request:
     branches:
-      - configure/workspace
+      - main
     paths:
       - 'apps/web/**'
 
