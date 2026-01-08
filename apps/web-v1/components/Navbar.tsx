@@ -1,7 +1,5 @@
-/* eslint-disable no-unused-vars */
- "use client";
+"use client";
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation"; // Import `useRouter` for programmatic navigation
 import { motion, useAnimation } from "framer-motion";
 
 interface NavItem {
@@ -26,7 +24,6 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const controls = useAnimation();
-  const router = useRouter(); // Initialize the useRouter hook for navigation
 
   // Handle scroll event to change navbar style
   useEffect(() => {

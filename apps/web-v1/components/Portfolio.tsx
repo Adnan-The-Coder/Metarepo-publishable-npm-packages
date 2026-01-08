@@ -9,31 +9,14 @@ import {
   FaDatabase,
   FaReact,
   FaNode,
-  FaCode,
-  FaJava,
-  FaPython,
   FaCar,
   FaVideo,
   FaBook,
 } from "react-icons/fa";
 import {
-  SiNextdotjs,
-  SiPrisma,
-  SiTypescript,
-  SiJavascript,
-  SiMongodb,
-  SiPostgresql,
-  SiSupabase,
-  SiCloudflare,
-  SiTailwindcss,
-  SiC,
-  SiGooglecloud,
-  SiBlockchaindotcom,
-  SiReactivex,
   SiBlender,
 } from "react-icons/si";
-import { MdApi } from "react-icons/md";
-import { GiBrain, GiCube, GiJetFighter } from "react-icons/gi";
+import { GiCube, GiJetFighter } from "react-icons/gi";
 import Image from "next/image";
 
 import Contact from "./Contact";

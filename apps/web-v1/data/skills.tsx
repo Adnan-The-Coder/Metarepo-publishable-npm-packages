@@ -4,7 +4,6 @@ import {
   SiTypescript,
   SiJavascript,
   SiMongodb,
-  SiPostgresql,
   SiSupabase,
   SiCloudflare,
   SiTailwindcss,
@@ -12,12 +11,10 @@ import {
   SiGooglecloud,
   SiBlockchaindotcom,
   SiReactivex,
-  SiBlender,
   SiApachekafka,
   SiGithub,
 } from "react-icons/si";
 import {
-  FaGithub,
   FaServer,
   FaDatabase,
   FaReact,
@@ -25,13 +22,10 @@ import {
   FaCode,
   FaJava,
   FaPython,
-  FaCar,
-  FaVideo,
-  FaBook,
   FaDocker,
 } from "react-icons/fa";
 import { MdApi } from "react-icons/md";
-import { GiBrain, GiCube, GiJetFighter } from "react-icons/gi";
+import { GiBrain } from "react-icons/gi";
 import { BiGitBranch } from "react-icons/bi";
 
 export const skills = {

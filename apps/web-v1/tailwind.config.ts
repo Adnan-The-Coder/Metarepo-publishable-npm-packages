@@ -25,7 +25,7 @@ export default {
     },
   },
   plugins: [
-    function ({ addUtilities }: { addUtilities: Function }) {
+    function ({ addUtilities }: { addUtilities: (utilities: Record<string, Record<string, string>>) => void }) {
       const newUtilities = {
         '.text-shadow-sm': {
           textShadow: '0 1px 2px rgba(0, 0, 0, 0.5)',
