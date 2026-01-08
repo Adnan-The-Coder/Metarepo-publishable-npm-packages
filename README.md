@@ -35,6 +35,44 @@
 
 </div>
 
+### MetaRepo: The Development Universe
+
+A unified monorepo containing the full spectrum of projects I build, maintain, and experiment with — from open-source libraries and backend services to portfolio sites and exploratory prototypes.
+
+This repo isn't just a storage space — it's the backbone of my development workflow. Everything lives here: production-ready code, tools I share with the community, personal builds, and experimental ideas in progress.
+
+- **Portfolio Websites**: All versions of my personal portfolio (v1, v2, etc.)
+- **Backend Services**: Complete backend infrastructure and APIs
+- **Libraries & Packages**: Reusable code, utilities, and components
+- **Experiments**: Side projects, POCs, and learning experiments
+- **Open Source**: Public packages and contributions
+
+This repository serves as the single source of truth for my development work, enabling seamless integration across projects while maintaining a unified development experience.
+
+<div style="flex: 1; min-width: 250px;">
+  <h3>Built With</h3>
+  <p>
+    <img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" />
+    <img alt="NextJS" src="https://img.shields.io/badge/-NextJS-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
+    <img alt="pnpm" src="https://img.shields.io/badge/pnpm-F69220?style=flat-square&logo=pnpm&logoColor=white" />
+    <img alt="TailwindCSS" src="https://img.shields.io/badge/-Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" />
+    <img alt="Cloudflare" src="https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=Cloudflare&logoColor=white" />
+    <img alt="git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
+    <img alt="D1" src="https://img.shields.io/badge/Cloudflare%20D1-4B8B3C?style=flat-square&logo=cloudflare&logoColor=white" />
+    <img alt="Drizzle" src="https://img.shields.io/badge/Drizzle-F27A4B?style=flat-square&logo=drizzle&logoColor=white" />
+    <img alt="Nx" src="https://img.shields.io/badge/Nx-000000?style=flat-square&logo=nx&logoColor=white" />
+    <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+    <img alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" />
+    <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
+    <img alt="Pandas" src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" />
+    <img alt="Matplotlib" src="https://img.shields.io/badge/Matplotlib-003366?style=flat-square&logo=matplotlib&logoColor=white" />
+    <img alt="Jest" src="https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white" />
+    <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white" />
+  </p>
+</div>
+
+---
+
 ## 🌟 Overview
 
 metarepo-workspace is a comprehensive enterprise grade monorepo contains multiple applications organized in a scalable architecture which includes web-services, backend-microservices, python AI/ML, Docker Containers,etc.. deployed on platforms like AWS, GCP, Azure, Render, Cloudflare, Railway, heroku...
