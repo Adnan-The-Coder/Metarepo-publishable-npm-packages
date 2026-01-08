@@ -5,12 +5,12 @@ on:
     branches:
       - main
     paths:
-      - 'apps/web--v1/**'
+      - 'apps/web-v1/**'
   pull_request:
     branches:
       - main
     paths:
-      - 'apps/web--v1/**'
+      - 'apps/web-v1/**'
 
 jobs:
   deploy:

@@ -1,27 +1,6 @@
-import { composePlugins, withNx } from '@nx/next';
-import type { NextConfig } from 'next';
-import path from 'path';
-import { initOpenNextCloudflareForDev } from '@opennextjs/cloudflare';
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  reactStrictMode: true,
-  transpilePackages: ['@metarepo/api-endpoints'],
-  experimental: {
-    externalDir: true,
-  },
-  nx: {},
-  webpack: (config) => {
-    config.resolve.alias = {
-      ...(config.resolve.alias ?? {}),
-      '@metarepo/api-endpoints': path.resolve(__dirname, '../../packages/api-endpoints/src'),
-    };
-    return config;
-  },
 };
 
-const plugins = [withNx];
-const composed = composePlugins(...plugins)(nextConfig);
-
-initOpenNextCloudflareForDev();
-
-export default composed;
+export default nextConfig;
